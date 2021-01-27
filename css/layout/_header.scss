@@ -1,0 +1,39 @@
+.header{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    z-index: 11;
+    justify-content: flex-end;
+    padding: 30px;
+    animation: 1s ease-out down;
+    .logo{
+        margin-right: auto;
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+    .main-nav a{
+        margin-left: 35px;
+        &:hover{
+            text-decoration:line-through;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .header{
+        display: block;
+        background-color: $main-color;
+        .logo{
+            margin-right: 0;
+            margin-left: 0;
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 4px;
+        }
+        .main-nav{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+    }
+} 

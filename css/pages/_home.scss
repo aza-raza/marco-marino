@@ -1,0 +1,39 @@
+/* splash */
+.splash{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: 1.4s ease-out up;
+    h1{
+        font-size: 125px;
+        line-height: 90px;
+        font-weight: 400;
+        color: whitesmoke;
+        width: 70%;
+        .sous-titre{
+            font-size: 14px;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .splash h1{
+        width: 100%;
+        font-size: 85px;
+        letter-spacing: -2px;
+        margin: 0;
+        .sous-titre{
+            letter-spacing: 2px;
+        }
+    }
+    .splash a{
+        display: none;
+    }
+} 

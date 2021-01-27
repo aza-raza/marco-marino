@@ -1,0 +1,267 @@
+body.elflako{
+    background-color: white;
+}
+.header.black a{
+    color: black;
+}
+
+/* hero */
+.hero{
+    background: url(../img/hero.jpg) center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: whitesmoke;
+        font-size: 125px;
+        line-height:72px;
+        font-weight: 500;
+        text-align: center;
+        span{
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            padding-top: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+.down-arrow{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    background: whitesmoke;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 20px;
+    }
+}
+/* challenge */
+.challenge{
+    margin: 0;
+    .wrapper-c{
+        width: 50%;
+        margin: 0 auto;
+        .chall-text{
+            //width: 70%;
+            margin: 0 auto;
+            h4{
+                margin: 0;
+                padding-top: 150px;
+                color: gray;
+                letter-spacing: 4px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 16px;
+                line-height: 32px;
+                color: #333;
+                padding-top: 30px;
+            }
+        }
+        .thumbs{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            .col1{
+                width: 48%;
+                height: 500px;
+                padding-right: 15px;
+                padding-left: 0px;
+                background-color: #fafafa;  
+                @include radius;
+                .elfako1{
+                    background: url(../img/brand-black.png) center/contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            .col2{
+                width: 48%;
+                height: 500px;
+                padding-right: 0px;
+                padding-left: 15px;
+                background-color: #2c2d2d;
+                @include radius;
+                .elfako2{
+                    background: url(../img/brand-white.png) center/contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+.thumb-full{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* brand-identity */
+.brand-identity{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding:140px 0 40px;
+    h4{
+        color: gray;
+        letter-spacing: 4px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    p{
+        font-size: 45px;
+        line-height: 72px;
+        font-style: italic;
+    }
+}
+/* slider --> slider.scss*/
+
+/* elfako-web */
+.elfako-web{
+    height: 600px;
+    @include radius;
+    .elfako-web-img{
+       background: url(../img/flako-web-min.png) center/cover;
+       height: 100%;
+    }
+}
+/* minimalism */
+.minimalism{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+    h4{
+        color: gray;
+        letter-spacing: 4px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    p{
+        font-size: 45px;
+        line-height: 72px;
+        font-style: italic;
+    }
+}
+/* galery */
+.galery{
+    width: 100%;
+    /* row-col */
+    .row-col{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        > div{
+            width: 48%;
+        }
+        .image1{
+            background: url(../img/03.jpg) center/cover;
+            background-repeat: no-repeat;
+            padding-right: 15px;
+            padding-left: 0px;
+            @include radius;
+            height: 500px;
+        }
+        .image2{
+            background: url(../img/04.jpg) center/cover;
+            background-repeat: no-repeat;
+            padding-right: 0px;
+            padding-left: 15px;
+            @include radius;
+            height: 500px;
+        }
+    }
+    /* row2*/
+    .row{
+        height: 800px;
+        @include radius;
+        margin:50px 0; 
+    }
+    .row-img3{
+        background: url(../img/flako6-min.jpg) center/cover;
+    }
+    .row-img4{
+        background: url(../img/flako7-min.jpg) center/cover;
+        margin-bottom: 80px;
+    }
+
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+    .elflako .header{
+        background: white;
+        a{
+            color: $main-color;
+        }
+    }
+    .hero{
+        height:500px;
+        width: 100vw;
+        position: relative;
+        top: 136px;
+        left: 0;
+        background-attachment: initial;
+        h1{
+            font-size: 70px;
+            span{
+                padding-top: 10px;
+            }
+        }
+        .down-arrow{
+            display: none;
+        }
+    }
+    
+    .challenge .wrapper-c{
+        width: 90%;
+        padding-top: 100px;
+        .chall-text{
+            width: 90%;
+            /* h4{
+                margin-top: 150px;
+            } */
+        }
+        .thumbs{
+            margin-top: 60px;
+            flex-direction: column;
+            height: auto;
+            .col1, .col2{
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+    .brand-identity{
+        padding-top: 40px;
+    }
+    .minimalism{
+        padding-top: 10px;
+    }
+
+    .galery .row-col{
+        flex-direction: column;
+        margin-bottom: 0;
+        .image1, .image2{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .galery .row{
+        height: 500px;
+    }
+    
+}

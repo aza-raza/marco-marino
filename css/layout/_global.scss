@@ -1,0 +1,51 @@
+body{
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+    background:black;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.overlay{
+    /* animation: 1.5s ease-out overlay; */
+    background-color: #1a1a1a;
+    /* width: 100%;
+    height: 100%; */
+    /* left: 0; */
+    /* left: -100vw; */
+    /* transform: translateX(100vw); */
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+}
+
+/* .loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: pink;
+}
+.fondu-out {
+    opacity: 0;
+    transition: opacity .4s linear;
+} */
+
+.reveal{
+    opacity: 0;
+    transform: translateY(0);
+}
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: 1s;
+}

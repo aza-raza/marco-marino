@@ -1,0 +1,15 @@
+/* el-flako slider */
+.swiper-container {
+    width: 100%;
+    height: 600px;
+    @include radius;
+    margin-bottom: 100px;
+}
+.swiper-slide{
+    background:lightgray;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: white;
+    /* font-size: 120px !important; */
+    width: 80px;
+}

@@ -1,0 +1,7 @@
+@mixin transition($duree:0.3s) {
+    transition:$duree all ease-in-out;
+}
+
+@mixin radius {
+    border-radius: 10px; 
+}

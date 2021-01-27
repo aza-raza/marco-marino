@@ -1,0 +1,26 @@
+@keyframes down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -30%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* @keyframes overlay {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+} */
