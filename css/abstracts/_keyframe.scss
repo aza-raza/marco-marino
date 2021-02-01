@@ -16,11 +16,11 @@
     }
 }
 
-/* @keyframes overlay {
+@keyframes rideau {
     0% {
-      transform: translateX(100vw);
+      transform: translateX(0);
     }
     100% {
-      transform: translateX(200%);
+      transform: translateX(100%);
     }
-} */
+}

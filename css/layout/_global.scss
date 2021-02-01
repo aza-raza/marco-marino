@@ -16,19 +16,6 @@ a{
     letter-spacing: 1px;
 }
 
-.overlay{
-    /* animation: 1.5s ease-out overlay; */
-    background-color: #1a1a1a;
-    /* width: 100%;
-    height: 100%; */
-    /* left: 0; */
-    /* left: -100vw; */
-    /* transform: translateX(100vw); */
-    opacity: 1;
-    position: absolute;
-    z-index: 100;
-}
-
 /* .loader {
     position: absolute;
     width: 100%;
@@ -39,6 +26,17 @@ a{
     opacity: 0;
     transition: opacity .4s linear;
 } */
+
+.curtain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100vw;
+    height: 100vh;
+    background: #2c2d2d;
+    animation: rideau 2s cubic-bezier(0.87, 0, 0.13, 1) 1 forwards;
+}
 
 .reveal{
     opacity: 0;
